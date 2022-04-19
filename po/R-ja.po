@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspFactor 0.13.0\n"
-"POT-Creation-Date: 2021-12-18 03:31\n"
-"PO-Revision-Date: 2021-11-10 04:46+0000\n"
+"POT-Creation-Date: 2022-01-15 03:31\n"
+"PO-Revision-Date: 2022-01-07 12:53+0000\n"
 "Last-Translator: Daiki Hojo <dhojo.bayes@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/jasp/jaspfactor-"
 "r/ja/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 msgid "Second-Order"
 msgstr "二次"
@@ -67,6 +67,9 @@ msgstr "ベースラインモデル"
 
 msgid "Factor model"
 msgstr "因子モデル"
+
+msgid "R-Squared"
+msgstr "R二乗"
 
 msgid "Additional fit measures"
 msgstr "追加の適合度指標"
@@ -165,6 +168,9 @@ msgid "Not all bootstrap samples were successful: CI based on %.0f samples."
 msgstr ""
 "すべてのブートストラップサンプルが成功したわけではありません。CIは%.0fのサン"
 "プルに基づいています。"
+
+msgid "Factor loadings"
+msgstr "因子負荷量"
 
 msgid "Factor"
 msgstr "要因"
@@ -302,6 +308,12 @@ msgstr "Kaiser-Meyer-Olkin検定"
 msgid "Overall MSA"
 msgstr "全体的な MSA"
 
+msgid "Bartlett's test"
+msgstr "Bartlettの検定"
+
+msgid "Chi-squared Test"
+msgstr "カイ二乗検定"
+
 msgid "Degrees of freedom below 0, model is unidentified."
 msgstr "自由度が0より小さく，モデルは識別できません。"
 
@@ -373,7 +385,7 @@ msgid "Data"
 msgstr "データ"
 
 msgid "Simulated data from parallel analysis"
-msgstr ""
+msgstr "平行解析によるシミュレーションデータ"
 
 msgid "Eigenvalue"
 msgstr "固有値"
@@ -387,8 +399,8 @@ msgstr "次より大きい固有値を持つコンポーネントがありませ
 msgid "Component Loadings"
 msgstr "成分負荷量"
 
-msgid "Variance explained"
-msgstr "因子寄与"
+msgid "Component Characteristics"
+msgstr "成分特性"
 
 msgid "Component Correlations"
 msgstr "成分間相関"
@@ -398,6 +410,9 @@ msgstr "スクリープロット"
 
 msgid "Component"
 msgstr "コンポーネント"
+
+#~ msgid "Variance explained"
+#~ msgstr "因子寄与"
 
 #~ msgid "Simulated (95th quantile)"
 #~ msgstr "シミュレーション(95分位値)"

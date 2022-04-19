@@ -275,7 +275,7 @@ PrincipalComponentAnalysis <- function(jaspResults, dataset, options, ...) {
     eigtab$addColumnInfo(name = "eigvU", title = gettext("Eigenvalue"),      type = "number", overtitle = overTitleA)
     eigtab$addColumnInfo(name = "propU", title = gettext("Proportion var."), type = "number", overtitle = overTitleA)
     eigtab$addColumnInfo(name = "cumpU", title = gettext("Cumulative"),      type = "number", overtitle = overTitleA)
-    eigtab$addColumnInfo(name = "eigvR", title = gettext("Variance explained"), type = "number", overtitle = overTitleB)
+    eigtab$addColumnInfo(name = "eigvR", title = gettext("SumSq. Loadings"), type = "number", overtitle = overTitleB)
     eigtab$addColumnInfo(name = "propR", title = gettext("Proportion var."), type = "number", overtitle = overTitleB)
     eigtab$addColumnInfo(name = "cumpR", title = gettext("Cumulative"),      type = "number", overtitle = overTitleB)
   } else {
@@ -320,9 +320,13 @@ PrincipalComponentAnalysis <- function(jaspResults, dataset, options, ...) {
 
   pcaResult <- modelContainer[["model"]][["object"]]
 
-  if (pcaResult$factors == 1 || options$rotationMethod == "orthogonal") return()
-  # no factor correlation matrix when rotation specifiec uncorrelated factors!
-  cors <- zapsmall(pcaResult$Phi)
+  if (pcaResult$factors == 1 || options$rotationMethod == "orthogonal") {
+    # no factor correlation matrix when rotation specified uncorrelated factors!
+    cors <- diag(pcaResult$factors)
+  } else {
+    cors <- zapsmall(pcaResult$Phi)
+  }
+
   dims <- ncol(cors)
 
 
@@ -368,7 +372,7 @@ PrincipalComponentAnalysis <- function(jaspResults, dataset, options, ...) {
     tp <- rep(c(gettext("Data"), gettext("Simulated data from parallel analysis")), each = n_col)
 
   } else { # do not display parallel analysis
-    evs <- eigen(cov(dataset, use = "pairwise.complete.obs"), only.values = T)$values
+    evs <- eigen(cor(dataset, use = "pairwise.complete.obs"), only.values = TRUE)$values
     tp <- rep(gettext("Data"), each = n_col)
   }
 

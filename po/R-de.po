@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
-"POT-Creation-Date: 2021-12-18 03:31\n"
-"PO-Revision-Date: 2021-10-03 14:07+0000\n"
+"POT-Creation-Date: 2022-01-15 03:31\n"
+"PO-Revision-Date: 2021-12-26 19:54+0000\n"
 "Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/jasp/jaspfactor-r/"
 "de/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n==0 ? 0 : n==1 ? 0 : 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 msgid "Second-Order"
 msgstr "Zweiter-Ordnung"
@@ -69,6 +69,9 @@ msgstr "Baseline-Modell"
 
 msgid "Factor model"
 msgstr "Faktormmodell"
+
+msgid "R-Squared"
+msgstr "R-Quadrat"
 
 msgid "Additional fit measures"
 msgstr "Weitere Anpassungsmetriken"
@@ -167,6 +170,9 @@ msgid "Not all bootstrap samples were successful: CI based on %.0f samples."
 msgstr ""
 "Nicht alle Bootstrap-Stichproben waren erfolgreich: KI basiert auf %.0f "
 "Stichproben."
+
+msgid "Factor loadings"
+msgstr "Faktorladungen"
 
 msgid "Factor"
 msgstr "Faktor"
@@ -304,6 +310,12 @@ msgstr "Kaiser-Meyer-Olkin-Test"
 msgid "Overall MSA"
 msgstr "Gesamt-MSA"
 
+msgid "Bartlett's test"
+msgstr "Bartletts Test"
+
+msgid "Chi-squared Test"
+msgstr "Chi-Quadrat-Test"
+
 msgid "Degrees of freedom below 0, model is unidentified."
 msgstr "Freiheitsgrade unter 0, Modell ist nicht identifiziert."
 
@@ -375,7 +387,7 @@ msgid "Data"
 msgstr "Daten"
 
 msgid "Simulated data from parallel analysis"
-msgstr ""
+msgstr "Simulierte Daten aus Parallelanalyse"
 
 msgid "Eigenvalue"
 msgstr "Eigenwert"
@@ -389,8 +401,8 @@ msgstr "Keine Komponenten mit einem Eigenwert >"
 msgid "Component Loadings"
 msgstr "Komponentenladungen"
 
-msgid "Variance explained"
-msgstr "Erklärte Varianz"
+msgid "Component Characteristics"
+msgstr "Komponenten-Charakteristiken"
 
 msgid "Component Correlations"
 msgstr "Komponentenkorrelationen"
@@ -400,6 +412,9 @@ msgstr "Scree-Plot"
 
 msgid "Component"
 msgstr "Komponente"
+
+#~ msgid "Variance explained"
+#~ msgstr "Erklärte Varianz"
 
 #~ msgid "Simulated (95th quantile)"
 #~ msgstr "Simuliert (95tes Quantil)"

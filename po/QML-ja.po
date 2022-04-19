@@ -552,33 +552,33 @@ msgid "Component size"
 msgstr "成分のサイズ"
 
 msgctxt "ExploratoryFactorAnalysis|"
-msgid ""
-msgstr ""
-
-msgctxt "ExploratoryFactorAnalysis|"
 msgid "Based on PC"
-msgstr ""
+msgstr "PCに基づく"
 
 msgctxt "ExploratoryFactorAnalysis|"
 msgid "Based on FA"
-msgstr ""
+msgstr "FAに基づく"
 
 msgctxt "ExploratoryFactorAnalysis|"
 msgid "Parallel analysis results"
-msgstr ""
+msgstr "平行解析結果"
 
 msgctxt "PrincipalComponentAnalysis|"
+msgid "Based on PC"
+msgstr "PCに基づく"
+
+msgctxt "PrincipalComponentAnalysis|"
+msgid "Based on FA"
+msgstr "FAに基づく"
+
+msgctxt "PrincipalComponentAnalysis|"
+msgid "Parallel analysis results"
+msgstr "平行解析結果"
+
+msgctxt "ExploratoryFactorAnalysis|"
 msgid ""
 msgstr ""
 
 msgctxt "PrincipalComponentAnalysis|"
-msgid "Based on PC"
-msgstr ""
-
-msgctxt "PrincipalComponentAnalysis|"
-msgid "Based on FA"
-msgstr ""
-
-msgctxt "PrincipalComponentAnalysis|"
-msgid "Parallel analysis results"
+msgid ""
 msgstr ""
